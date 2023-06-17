@@ -1,23 +1,33 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import algorithm
 
 app = Flask(__name__)
 inversions = None
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
-    if request.method == 'GET':
-        return render_template('index.html')
-
-    if request.method == 'POST':
-        arr = [request.form['pos1'], request.form['pos2'], request.form['pos3'], request.form['pos4'], request.form['pos5'],
-               request.form['pos6'], request.form['pos7'], request.form['pos8'], request.form['pos9'], request.form['pos10']]
-        inversions = algorithm.getInversions(arr)
-        return render_template('index.html', inversions=inversions)
-
     return render_template('index.html')
 
+@app.route('/submit', methods=['POST'])
+def process_data():
+        data = request.json
+        ordered_images = data.get("orderedImages")
+        
+        
+        print(data)
+        print(ordered_images)
+        print(type(ordered_images))
 
+        
+        ordered_images = list(map(int, ordered_images))
+
+        result = algorithm.rockerPercent(ordered_images)
+        print("Você é ", result, "% Rockeiro!")
+
+        
+        return jsonify(result=result)
+    
 if __name__ == '__main__':
     app.run(debug=True)
+    

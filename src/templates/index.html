@@ -1,203 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../static/style.css" />
     <title>Perfil Musical</title>
+    <link rel="stylesheet" href="../static/styles/style.css" />
   </head>
-
   <body>
-    <div class="registration-form">
-      <form action="/" method="post">
-        <div class="container">
-          <div class="option 1">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos1"></label>
-            <select id="pos1" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
+    <div id="container">
+      <h1>RockerPercent</h1>
+      <h2>Quão rockeiro você é?</h2>
 
-          <div class="option 2">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos2"></label>
-            <select id="pos2" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
+      <div id="sortable-container">
+        <ul id="sortable">
+          <li>
+            <h2 alt="10">Anitta</h2>
+            <img src="../static/img/anitta.jpg" />
+          </li>
+          <li>
+            <h2 alt="9">MC Kevin o Chris</h2>
+            <img src="../static/img/kevin.jpg" />
+          </li>
+          <li>
+            <h2 alt="8">Gustavo Lima</h2>
+            <img src="../static/img/gustavo.jpeg" />
+          </li>
+          <li>
+            <h2 alt="7">Léo Santana</h2>
+            <img src="../static/img/leo.jpg" />
+          </li>
+          <li>
+            <h2 alt="6">Matuê</h2>
+            <img src="../static/img/matue.jpg" />
+          </li>
+          <li>
+            <h2 alt="5">João Gomes</h2>
+            <img src="../static/img/joao.jpg" />
+          </li>
+          <li>
+            <h2 alt="4">Péricles</h2>
+            <img src="../static/img/pericles.jpg" />
+          </li>
+          <li>
+            <h2 alt="3">Chico Buarque</h2>
+            <img src="../static/img/chico.jpeg" />
+          </li>
+          <li>
+            <h2 alt="2">Arctic Monkeys</h2>
+            <img src="../static/img/arctic.jpg" />
+          </li>
 
-          <div class="option 3">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos3"></label>
-            <select id="pos3" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
+          <li>
+            <h2 alt="1">Metallica</h2>
+            <img src="../static/img/metallica.jpg" />
+          </li>
+        </ul>
+      </div>
+      <div class="box-resultado">
+        <button id="submit-button">Enviar</button>
 
-          <div class="option 4">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos4"></label>
-            <select id="pos4" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
-
-          <div class="option 5">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos5"></label>
-            <select id="pos5" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
-
-          <div class="option 6">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos6"></label>
-            <select id="pos6" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
-
-          <div class="option 7">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos7"></label>
-            <select id="pos7" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
-
-          <div class="option 8">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos8"></label>
-            <select id="pos8" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
-
-          <div class="option 9">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos9"></label>
-            <select id="pos9" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
-
-          <div class="option 10">
-            <img src="../static/img/1.jpg" alt="1" height="200px" />
-            <label for="pos10"></label>
-            <select id="pos10" name="posicao">
-              <option value="1">1º</option>
-              <option value="2">2º</option>
-              <option value="3">3º</option>
-              <option value="4">4º</option>
-              <option value="5">5º</option>
-              <option value="6">6º</option>
-              <option value="7">7º</option>
-              <option value="8">8º</option>
-              <option value="9">9º</option>
-              <option value="10">10º</option>
-            </select>
-          </div>
+        <div id="result">
+          {% if resultado %}
+          <p>Number of inversions are: {{ resultado }}</p>
+          {% endif %}
         </div>
-
-        <input type="submit" class="btn btn-block send" value="Enviar">
-        {% if inversions != None %}
-            <div class="alert alert-danger" role="alert">
-                {{ inversions }}
-            </div>
-            {% endif %}
-      </form>
+      </div>
     </div>
+
+    <script src="../static/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"></script>
   </body>
 </html>
