@@ -56,6 +56,3 @@ def rockerPercent(arr):
     inversions = inversions - 45
     percent = round(-1*((inversions / 45) * 100),0)
     return percent
-
-arr = [1,2,3,4,5,6,7,8,9,10] #
-print(getInversions(arr))

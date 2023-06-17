@@ -14,16 +14,11 @@ def process_data():
         data = request.json
         ordered_images = data.get("orderedImages")
         
-        
-        print(data)
-        print(ordered_images)
-        print(type(ordered_images))
 
         
         ordered_images = list(map(int, ordered_images))
 
         result = algorithm.rockerPercent(ordered_images)
-        print("Você é ", result, "% Rockeiro!")
 
         
         return jsonify(result=result)
