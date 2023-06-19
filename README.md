@@ -18,6 +18,9 @@ RockerPercent é uma aplicação que utiliza do algoritmo de contagem de invers�
 ## Screenshots
 ![image](./src/static/img/screenshot1.png)
 
+## Video de Apresentação
+> Disponível na raiz do repositório.
+
 ## Instalação 
 **Linguagem**: Python & Javascript< br>
 **Framework**: Flask<br>
