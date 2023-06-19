@@ -19,6 +19,7 @@ RockerPercent é uma aplicação que utiliza do algoritmo de contagem de invers�
 ![image](./src/static/img/screenshot1.png)
 
 ## Video de Apresentação
+[Assistir no SharePoint](https://unbbr.sharepoint.com/:v:/s/ProjetodeAlgoritmos-EK/EbWpKinzUvpBl8luh9ZgPm4BNRQ6qezWivREIGGsHCW37A?e=K0W7hB)
 > Disponível na raiz do repositório.
 
 ## Instalação 
